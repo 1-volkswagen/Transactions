@@ -1,0 +1,87 @@
+ 0.1 Blending transactions
+ -------------------------
+
+ NOTE: In reality a blending operation is much more complex and diferentiates from the example below.
+
+ Prior to the blending transaction these identities are tied to the following wallets containing 10.000 XVC each.
+               ___________
+              |           |
+ WALLET A:    |10.000 XVC |-----------:  JOHN
+              |___________|
+               ___________
+              |           |
+ WALLET B:    |10.000 XVC |-----------:  MAKIS
+              |___________|
+               ___________
+              |           |
+ WALLET C:    |10.000 XVC |-----------:  LARA
+              |___________|
+
+
+ A blended transaction is best explained using the black box concept.
+
+ Defenition: A black box is a box from which the contents are known to a certain extent but some information is unverifiable, a black box is impossible to break open.
+
+ Each blended transaction consists of a number of these black boxes.
+
+ In the example above we have three boxes each containing 10.000 XVC.
+
+ One box belongs to JOHN, one to MAKIS and one to LARA.
+
+ After a blended transaction we know that each of these participants have and own 10.000 XVC but it is impossible to tell what box belongs to which person after the blending has completed.
+
+  __________                       __________                  __________
+ |          |     blender        |          |    output      |          |
+ |   JOHN   | -------------->    |    ?     | -------------> |  10.000  | ------------> JOHN, MAKIS or LARA?
+ |__________|                    |__________|                |__________|
+
+  __________                       __________                  __________
+ |          |     blender        |          |    output      |          |
+ |   MAKIS  | -------------->    |    ?     | -------------> |  10.000  | ------------> JOHN, MAKIS or LARA?
+ |__________|                    |__________|                |__________|
+
+  __________                       __________                  __________
+ |          |     blender        |          |    output      |          |
+ |   LARA   | -------------->    |    ?     | -------------> |  10.000  | ------------> JOHN, MAKIS or LARA?
+ |__________|                    |__________|                |__________|
+
+ After a blending operation all the public is able to see are three black boxes with no name tag on it consisting of 10.000 XVC.
+
+ All we know is that prior to the blending transaction three participants JOHN, MAKIS and LARA have participated and that each of them had 10.000 XVC to start with.
+
+ Now both JOHN, MAKIS and LARA are able to spend their 10.000 XVC in relative annonymity.
+
+ 0.2 Blending transactions
+ -------------------------
+
+ If the representation above is not clear to you, think of a game show like this:
+
+  __________   __________   __________
+ |          | |          | |          |
+ |  10.000  | |  10.000  | |  10.000  |
+ |__________| |__________| |__________|
+     BOX 1       BOX 2        BOX 3
+
+ In each of the boxes there is a card with a name written on it.
+
+ [LARA] [MAKIS] [JOHN]
+
+ Behind a big curtain, the name cards have been carefully put into the boxes by a lovely female assistent at random.
+
+ Then the boxes are switched round and round untill no one knows what card is in which box (in case she is crooked).
+
+ After that the curtain is lifted and the boxes are shown to the audiance.
+
+ Now this is where it gets tricky, in fact, every blended operation is not a game show but a real transaction.
+
+ The workings of which are described above in example 0.1 and 0.2.
+
+ The audiance will never be able to verify their guesses if the boxes stay closed (and in a blended transaction they stay closed).
+
+ In reality you can iterate the blending process in order to increase the number of boxes ad infinitum.
+  __________   __________   __________   __________   __________   __________   ___ _ _ _
+ |          | |          | |          | |          | |          | |          | |
+ |  10.000  | |  10.000  | |  10.000  | |  10.000  | |  10.000  | |  10.000  | |  10.000   . . . . . . . . infty
+ |__________| |__________| |__________| |__________| |__________| |__________| |___ _ _ _
+
+ Making it even harder to guess for the audiance which name card is in what box.
